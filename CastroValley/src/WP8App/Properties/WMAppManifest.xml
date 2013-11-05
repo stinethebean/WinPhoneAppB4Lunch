@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
+  <DefaultLanguage xmlns="" code="en-US" />
+  <App xmlns="" ProductID="{aa352b73-6a38-4e0e-aefc-4ee4cd028cfd}" Title="Castro Valley, CA" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="" Description="Castro Valley is a census-designated place (CDP) in Alameda County, California, United States. As of the 2000 census, it is the fifth most populous unincorporated area in California, and the twenty-third in the United States. " Publisher="" PublisherID="{e7d94c95-4681-45a0-a8b4-5df4e482fb9e}">
+    <IconPath IsRelative="true" IsResource="false">Images\Logo-4ff76cb8-5c06-4bf6-bcdc-64756a06d71a.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_NETWORKING"/>
+      <Capability Name="ID_CAP_MEDIALIB_AUDIO"/>
+      <Capability Name="ID_CAP_MEDIALIB_PLAYBACK"/>
+      <Capability Name="ID_CAP_SENSORS"/>
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT"/>
+	  <Capability Name="ID_CAP_SPEECH_RECOGNITION" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="View/Info_Info.xaml" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="MyDoWapp" TaskName="_default">
+	    <TemplateFlip>
+          <SmallImageURI IsRelative="true" IsResource="false">Images/Logo-4ff76cb8-5c06-4bf6-bcdc-64756a06d71a.png</SmallImageURI>
+		  <Count>0</Count>
+		  <BackgroundImageURI IsRelative="true" IsResource="false">Images/Logo-4ff76cb8-5c06-4bf6-bcdc-64756a06d71a.png</BackgroundImageURI>
+          <Title>Castro Valley, CA</Title>
+          <BackContent></BackContent>
+	      <BackBackgroundImageURI IsRelative="true" IsResource="false">Images/Tileback-a46064e3-4b2f-4477-af74-e908e84b4f9c.jpg</BackBackgroundImageURI>
+          <BackTitle>Castro Valley, CA</BackTitle>
+		  		  <LargeBackgroundImageURI IsRelative="true" IsResource="false">Images/Logo-4ff76cb8-5c06-4bf6-bcdc-64756a06d71a.png</LargeBackgroundImageURI>
+		  <LargeBackBackgroundImageURI IsRelative="true" IsResource="false">Images/Tileback-a46064e3-4b2f-4477-af74-e908e84b4f9c.jpg</LargeBackBackgroundImageURI>
+ 
+          <DeviceLockImageURI IsRelative="true" IsResource="false"></DeviceLockImageURI>
+          <HasLarge>True</HasLarge>		
+        </TemplateFlip>
+      </PrimaryToken>
+    </Tokens>
+    <Extensions>
+      <Extension ExtensionName="LockScreen_Notification_IconCount" ConsumerID="{111DFF24-AA15-4A96-8006-2BFF8122084F}" TaskID="_default" />
+      <Extension ExtensionName="LockScreen_Notification_TextField" ConsumerID="{111DFF24-AA15-4A96-8006-2BFF8122084F}" TaskID="_default" />
+      <Extension ExtensionName="LockScreen_Background" ConsumerID="{111DFF24-AA15-4A96-8006-2BFF8122084F}" TaskID="_default" />
+    </Extensions>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+    </ScreenResolutions>
+  </App>
+</Deployment>
